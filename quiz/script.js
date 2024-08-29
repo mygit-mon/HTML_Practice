@@ -69,7 +69,8 @@ function selectAnswer(e) {
   if (correct) {
     quizScore++;
   }
-  document.getElementById('right-answers').innerText = quizScore;
+  document.getElementById('right-answers').innerText =
+    quizScore + '/' + questions.length;
 }
 
 function setStatusClass(element, correct) {
